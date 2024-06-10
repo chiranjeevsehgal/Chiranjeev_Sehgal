@@ -346,14 +346,14 @@
         flex-direction: row;
         color: black;
         margin-inline: 0.7rem;
-        
+        flex-wrap: wrap;
         
     }
     .answer-body .subdetails .like{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-inline: 05.rem;
+        margin-inline: 1rem;
     }
     
     .answer-body .subdetails .like p{
@@ -365,7 +365,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-inline: 0.1rem;
+        margin-inline: 1rem;
+        padding: 0.2rem 0.2rem;
+        margin-top: 0.4rem;
     }
     
     .answer-body .subdetails .comment input[type="text"]{
@@ -379,7 +381,7 @@
     
     .answer-body .subdetails .comment input[type="button"]{
         margin: 0rem 0.2rem;
-        font-size: small;
+        font-size: x-small;
         border-radius: 4px;
         background-color: rgb(202, 202, 202);
         color: rgb(73, 72, 72);
