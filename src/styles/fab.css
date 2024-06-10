@@ -89,7 +89,7 @@ body {
     align-items: center;
     background-color: white;
     padding: 8px 4px;
-    width: 250px;
+    width:max-content;
     border-radius: 8px;
 }
 
@@ -425,7 +425,7 @@ strong {
         bottom: 0;
         left: 0;
         height: 70%;
-        width: 100%;
+        width:max-content;
         background-color: white;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -447,3 +447,4 @@ strong {
 
 
 }
+
