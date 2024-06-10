@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fab-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fab:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+.fab-icon {
+    font-size: 32px;
+}
+
+.fab-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+
+.fab-option {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.fab-option .heading {
+    display: flex;
+    background-color: #fff;
+    padding: 4px 4px;
+    margin: 5px 10px;
+    border-radius: 4px;
+    height: 1.5rem;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-option .icon {
+    display: flex;
+    background-color: #fff;
+    padding: 4px 4px;
+    margin-inline-start: 10px;
+    margin-top: 8px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-new-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 8px 4px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.fab-option-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fab-option-icons .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fab-new-content .header p {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
+    ;
+}
+
+.fab-new-content .header hr {
+    margin-bottom: 14px;
+}
+
+.fab-new-content .content {
+    padding: 0px 3px;
+    margin-bottom: 8px;
+}
+
+.fab-new-content .content .select label {
+    font-size: small;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+.fab-new-content .content .textbox-label {
+    font-size: small;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+.fab-new-content .content select {
+    margin-top: 8px;
+    display: flex;
+    background-color: rgb(222, 218, 218);
+    border-radius: 4px;
+    padding: 4px 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.textbox-wrapper {
+    display: flex;
+    align-items: end;
+    background-color: rgb(222, 218, 218);
+    border-radius: 4px;
+    padding: 4px;
+    width: 96%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    margin-top: 8px;
+}
+
+.textbox_que {
+    display: flex;
+    align-items: end;
+    background-color: rgb(222, 218, 218);
+    border-radius: 4px;
+    padding: 4px 4px;
+    width: 96%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    margin-top: 8px;
+}
+
+.textbox_que input[type="text"] {
+    display: flex;
+    background-color: rgb(222, 218, 218);
+    border-radius: 4px;
+    padding: 3px 6px;
+    padding-bottom: 45px !important;
+    width: 94%;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    border: none;
+}
+
+
+.fab-new-content .content .textbox {
+    display: flex;
+    background-color: rgb(222, 218, 218);
+    border-radius: 4px;
+    padding: 3px 6px;
+    padding-bottom: 64px;
+    width: 94%;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    border: none;
+}
+
+.fab-new-content .content .textbox:focus {
+    outline: none;
+}
+
+.fab-new-content .content .attach {
+    /* background: none; */
+    background-color: rgb(190, 190, 190);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 13px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.fab-new-content .btn {
+    padding: 0px 3px;
+    display: flex;
+    justify-content: end;
+}
+
+.fab-new-content .btn .submit {
+    margin-top: 4px;
+    display: flex;
+    background-color: rgb(222, 218, 218);
+    border-radius: 8px;
+    padding: 6px 20px;
+    cursor: pointer;
+
+}
+
+
+
+.fab-new-content .header span {
+    font-weight: bold;
+}
+
+.fab-new-content .content .checkbox {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.fab-new-content .content .checkbox .anonymous {
+    width: 12px;
+    height: 11px;
+    cursor: pointer;
+}
+
+.fab-new-content .content .checkbox label {
+    font-size: smaller;
+}
+
+.fab-new-content .content .profile {
+    padding: 0px 3px;
+}
+
+.fab-new-content .content .profile label {
+    font-size: small;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+}
+
+.fab-new-content .content .profile input {
+    margin-top: 8px;
+    display: flex;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 93%;
+    margin-bottom: 10px;
+    border: 1px solid black
+}
+
+#query input {
+    background-color: rgb(222, 218, 218);
+
+}
+
+strong {
+    color: red;
+}
+
+.thank-you-message {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    right: 0px;
+    background-color: white;
+    padding: 0px 6px;
+    width: 250px;
+    border-radius: 6px;
+    z-index: 10;
+    animation: fadeOut 3s forwards;
+}
+
+.thank-you-message::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    /* Adjust the bottom position to align the arrow */
+    left: 85%;
+    transform: translateX(-10%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/* @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+} */
+
+.thank-you-message p {
+    font-size: smaller;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.file-previews {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.file-preview {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.file-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attach:disabled {
+    opacity: 0.5;
+    color: black;
+    cursor: not-allowed !important;
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+        /* Ensure it is behind the FAB content */
+        display: none;
+        /* Initially hidden */
+    }
+
+    /* Show the overlay when active */
+    .overlay.active {
+        display: block;
+    }
+
+    .fab-options {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 80px;
+        z-index: 15;
+    }
+
+    .fab-option-icons {
+        /* position: fixed; */
+        position: absolute;
+        top: -420px;
+        right: 100px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+    .fab-container {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 1000;
+    }
+
+    .fab-container.active {
+        top: auto;
+        /* Reset top positioning */
+        bottom: 30px;
+        /* Ensure it's positioned above fab-new-content */
+    }
+
+    .fab-new-content {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        z-index: 10;
+        /* Ensure it appears below the fab-options and fab button */
+    }
+
+    .fab-new-content.active {
+        transform: translateY(0);
+    }
+
+    .fab-new-content .content {
+        padding: 0 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+
+}

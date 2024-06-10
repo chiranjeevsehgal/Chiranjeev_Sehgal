@@ -1,0 +1,297 @@
+.question-header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    padding: 1rem 0rem;
+    width: 90%;
+    margin: auto;
+}
+
+.question-header p{
+    margin-left: 0.8rem;
+}
+
+.question-body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    padding: 1rem 0rem;
+    width: 45%;
+    margin: auto;
+
+}
+
+.question-body .body-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;    
+}
+
+.question-body .body-head img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.question-body .tag{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 0rem 0rem;    
+    margin-inline: 1rem;
+    width: 70%;
+}
+
+.question-body .tag p{
+    color: black;
+    background-color: rgb(117, 198, 225);
+    border-radius: 4px;
+    padding: 0.3rem 1rem;
+    margin-inline-start: 1rem;
+}
+
+.question-body .content{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 0.6rem 0rem;
+    margin-inline: 1rem;
+}
+
+.question-body .content p{
+    padding: 0.3rem 0rem;
+    margin: 0rem 1rem;
+    
+}
+
+.question-body .subdetails{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    /* padding: 0.6rem 0rem; */
+    margin-inline: 1rem;
+    justify-content: space-between;
+}
+.question-body .subdetails .views{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+.question-body .subdetails .views p{
+    margin: 0rem 0.4rem;
+    font-size:small;
+    
+}
+.question-body .subdetails .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+.question-body .subdetails .info p{
+    margin: 0rem 0.4rem;
+    font-size: small;
+}
+
+
+
+.answer-body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    padding: 1rem 0rem;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.answer-body .body-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;    
+}
+
+.answer-body .body-head .profile{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 1rem;
+    padding: 0rem 1rem;
+    
+}
+
+.answer-body .body-head img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.answer-body .profile .detail{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.answer-body .profile .detail p{
+    color: rgb(81, 80, 80);
+    margin-inline-start: 1rem;
+    padding: 0rem 0rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+.answer-body .profile .detail .name{
+    font-weight: bolder;
+    color: black;
+
+}
+
+.answer-body .profile .detail span{
+    color: rgb(81, 80, 80);
+    font-weight: 600;
+}
+
+.answer-body .body-head .edit{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 0.4rem;
+}
+
+.answer-body .body-head .edit p{
+    padding: 0rem 0.4rem;
+    font-weight: 600;
+}
+
+
+.answer-body .content{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 0.6rem 0rem;
+    margin-inline: 1rem;
+}
+
+.dummy{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.answer-body .content p{
+    padding: 0.3rem 0rem;
+    margin: 0rem 1rem;
+    
+}
+.answer-body .content span{
+    font-weight: bold;
+    
+}
+
+.answer-body .subdetails{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    /* padding: 0.6rem 0rem; */
+    margin-inline: 1rem;
+    width: 70%;
+    
+}
+.answer-body .subdetails .like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 3rem;
+}
+
+.answer-body .subdetails .like p{
+    margin: 0rem 0.2rem;
+    font-size:14px;
+    
+}
+.answer-body .subdetails .comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 1rem;
+}
+
+.answer-body .subdetails .comment input[type="text"]{
+    margin: 0rem 0.2rem;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    /* width: 220px; */
+    font-size: small;
+}
+
+.answer-body .subdetails .comment input[type="button"]{
+    margin: 0rem 0.2rem;
+    font-size: small;
+    border-radius: 4px;
+    background-color: rgb(202, 202, 202);
+    color: rgb(73, 72, 72);
+    padding: 0.2rem 1.4rem;
+    cursor: pointer;
+}
+
+.body-separator{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0rem;
+    width: 45%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.body-separator .answer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;    
+    color: white;
+}
+
+.body-separator .sort{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body-separator .sort p{
+    color: white;
+}
+.body-separator .sort select{
+    padding: 0.3rem 0.8rem;
+    margin-inline-start: 0.8rem;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .question-body, .answer-body, .body-separator {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: auto;
+    }
+
+    .tag{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .question-body, .answer-body, .body-separator {
+        width: 95%; /* Adjust width for even smaller screens */
+        margin: auto;
+    }
+
+    .tag{
+        width: 95%;
+    }
+}
