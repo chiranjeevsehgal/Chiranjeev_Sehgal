@@ -362,7 +362,7 @@ strong {
     .fab-container {
         /* bottom: calc(100% - 420px);  */
         bottom: 20px;
-        right: 20px;
+        right: 40px;
         
     }
 
@@ -407,9 +407,8 @@ strong {
     }
 
     .fab-option-icons {
-
         bottom: 350px;
-        right: 80px;
+        right: 100px;
         justify-content: center;
         align-items: center;
     }
