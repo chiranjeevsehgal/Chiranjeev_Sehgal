@@ -345,7 +345,7 @@
         display: flex;
         flex-direction: row;
         color: black;
-        margin-inline: 1rem;
+        margin-inline: 0.7rem;
         
         
     }
@@ -353,27 +353,28 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-inline: 1rem;
+        margin-inline: 05.rem;
     }
     
     .answer-body .subdetails .like p{
         margin: 0rem 0.2rem;
-        font-size:14px;
+        font-size:11px;
         
     }
     .answer-body .subdetails .comment{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-inline: 0.5rem;
+        margin-inline: 0.1rem;
     }
     
     .answer-body .subdetails .comment input[type="text"]{
         margin: 0rem 0.2rem;
-        padding: 0.2rem 0.4rem;
+        padding: 0.2rem 0.2rem;
         border-radius: 4px;
-        /* width: 220px; */
-        font-size: small;
+        width: 90px;
+        font-size: x-small;
+        
     }
     
     .answer-body .subdetails .comment input[type="button"]{
@@ -382,7 +383,7 @@
         border-radius: 4px;
         background-color: rgb(202, 202, 202);
         color: rgb(73, 72, 72);
-        padding: 0.2rem 1.4rem;
+        padding: 0.2rem 0.9rem;
         cursor: pointer;
     }
 }

@@ -78,8 +78,17 @@ ul button li:hover {
         padding: 6px 10px; /* Decrease padding */
     }
 
+    .nav .logo p {
+        margin-inline: 2px;
+        line-height: 1.2;
+        font-size: small;
+    }
+
     ul li {
-        padding: 10px; /* Decrease padding */
+        padding: 10px; 
+        display: flex;
+        align-items: center;
+        font-size: small;
     }
 
     ul li img.user {
@@ -90,7 +99,7 @@ ul button li:hover {
 
 @media (max-width: 480px) {
     .nav {
-        padding: 6px; /* Further decrease padding */
+        padding: 3px 3px
         
     }
     .nav .logo {
@@ -98,6 +107,7 @@ ul button li:hover {
         color: #fff;
         text-align: center;
         display: flex;
+        font-size: small;
     }
     
     .nav .logo .id {
@@ -109,14 +119,14 @@ ul button li:hover {
     .nav .logo p {
         margin-inline: 2px;
         line-height: 1.2;
-        font-size: small;
+        font-size: x-small;
     }
 
     ul li {
         padding: 0px 4px;
         display: flex;
         align-items: center;
-        font-size: small;
+        font-size: x-small;
     }
 
     ul li img.user {
