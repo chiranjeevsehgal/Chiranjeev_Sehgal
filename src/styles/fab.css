@@ -360,13 +360,13 @@ strong {
     }
 
     .fab-container {
-        bottom: calc(100% - 320px); /* Adjust bottom position */
+        bottom: calc(100% - 420px); 
         right: 20px;
     }
 
     .fab-options {
-        bottom: calc(100% - 320px); /* Adjust bottom position */
-        right: 20px;
+        top: calc(100% - 340px); 
+        right: 0px;
     }
 
     .fab-option .heading, .fab-option .icon {
@@ -387,8 +387,8 @@ strong {
     }
 
     .fab-option-icons {
-        bottom: calc(100% - 100px); /* Adjust bottom position */
-        right: 20px;
+        bottom: calc(100% - 110px); 
+        right:60px;
         justify-content: center;
         align-items: center;
     }
@@ -398,20 +398,17 @@ strong {
     }
 
     .fab-new-content .content {
-        overflow-y: auto; /* Enable scrolling for content */
-        padding: 0 10px; /* Adjust padding */
-        margin-top: 10px; /* Add margin */
-        height: calc(100% - 60px); /* Adjust height */
+        overflow-y: auto; 
+        padding: 0 10px; 
+        margin-top: 10px; 
+        height: calc(100% - 60px); 
     }
 
     .fab-new-content .content .textbox {
-        padding-bottom: 80px; /* Adjust padding for textbox */
+        padding-bottom: 80px; 
     }
 
-    
-
     .fab-new-content .header p {
-        /* padding: 0px 80px; */
         margin: 0rem 3rem;
         text-align: center;
         font-size: small;
