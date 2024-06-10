@@ -207,7 +207,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-inline: 3rem;
+    margin-inline: 1rem;
 }
 
 .answer-body .subdetails .like p{
@@ -219,12 +219,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-inline: 1rem;
+    margin-inline: 0.5rem;
 }
 
 .answer-body .subdetails .comment input[type="text"]{
     margin: 0rem 0.2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 4px;
     /* width: 220px; */
     font-size: small;
@@ -274,6 +274,40 @@
     border-radius: 6px;
 }
 
+@media only screen and (max-width: 1120px) 
+{
+    .answer-body .subdetails .like{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-inline: 0.6rem;
+    }
+    
+    .answer-body .subdetails .like p{
+        margin: 0rem 0.2rem;
+        font-size:14px;
+        
+    }
+
+    .answer-body .subdetails .comment input[type="text"]{
+        margin: 0rem 0.2rem;
+        padding: 0.2rem 0.3rem;
+        border-radius: 4px;
+        /* width: 220px; */
+        font-size: x-small;
+    }
+    
+    .answer-body .subdetails .comment input[type="button"]{
+        margin: 0rem 0.2rem;
+        font-size: small;
+        border-radius: 4px;
+        background-color: rgb(202, 202, 202);
+        color: rgb(73, 72, 72);
+        padding: 0.2rem 1.1rem;
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .question-body, .answer-body, .body-separator {
         width: 90%; /* Adjust width for smaller screens */
@@ -292,18 +326,7 @@
         
         
     }
-    .answer-body .subdetails .like{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-inline: 1rem;
-    }
     
-    .answer-body .subdetails .like p{
-        margin: 0rem 0.2rem;
-        font-size:14px;
-        
-    }
     .answer-body .subdetails .comment{
         display: flex;
         flex-direction: row;
