@@ -55,7 +55,6 @@ body {
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-
 }
 
 .fab-option .heading {
@@ -89,7 +88,7 @@ body {
     align-items: center;
     background-color: white;
     padding: 8px 4px;
-    width:max-content;
+    width: 200px;
     border-radius: 8px;
 }
 
@@ -97,7 +96,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
-
     position: fixed;
     bottom: 30px;
     right: 100px;
@@ -123,11 +121,11 @@ body {
     font-size: smaller;
     font-weight: 500;
     color: rgb(55, 55, 55);
-    ;
 }
 
 .fab-new-content .header hr {
     margin-bottom: 14px;
+    width: 100%;
 }
 
 .fab-new-content .content {
@@ -193,7 +191,6 @@ body {
     border: none;
 }
 
-
 .fab-new-content .content .textbox {
     display: flex;
     background-color: rgb(222, 218, 218);
@@ -211,7 +208,6 @@ body {
 }
 
 .fab-new-content .content .attach {
-    /* background: none; */
     background-color: rgb(190, 190, 190);
     border: none;
     border-radius: 4px;
@@ -238,10 +234,7 @@ body {
     border-radius: 8px;
     padding: 6px 20px;
     cursor: pointer;
-
 }
-
-
 
 .fab-new-content .header span {
     font-weight: bold;
@@ -281,12 +274,11 @@ body {
     padding: 4px 8px;
     width: 93%;
     margin-bottom: 10px;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 #query input {
     background-color: rgb(222, 218, 218);
-
 }
 
 strong {
@@ -312,18 +304,12 @@ strong {
     content: '';
     position: absolute;
     bottom: -16px;
-    /* Adjust the bottom position to align the arrow */
     left: 85%;
     transform: translateX(-10%);
     border-width: 8px;
     border-style: solid;
     border-color: white transparent transparent transparent;
 }
-
-/* @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-} */
 
 .thank-you-message p {
     font-size: smaller;
@@ -360,91 +346,242 @@ strong {
     cursor: not-allowed !important;
 }
 
+/* Media queries for smaller screens */
 @media (max-width: 480px) {
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 5;
-        /* Ensure it is behind the FAB content */
-        display: none;
-        /* Initially hidden */
-    }
-
-    /* Show the overlay when active */
-    .overlay.active {
-        display: block;
-    }
-
-    .fab-options {
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        bottom: 80px;
-        z-index: 15;
-    }
-
-    .fab-option-icons {
-        /* position: fixed; */
-        position: absolute;
-        top: -420px;
-        right: 100px;
-        z-index: 1000;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-
-
-
-    .fab-container {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        z-index: 1000;
-    }
-
-    .fab-container.active {
-        top: auto;
-        /* Reset top positioning */
-        bottom: 30px;
-        /* Ensure it's positioned above fab-new-content */
-    }
-
     .fab-new-content {
         position: fixed;
         bottom: 0;
+        width: 100%;
+        height: 300px; 
+        border-radius: 12px;
+        padding: 16px;
         left: 0;
-        height: 70%;
-        width:max-content;
-        background-color: white;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-        z-index: 10;
-        /* Ensure it appears below the fab-options and fab button */
+        right: 0;
     }
 
-    .fab-new-content.active {
-        transform: translateY(0);
+    .fab-container {
+        bottom: calc(100% - 320px); /* Adjust bottom position */
+        right: 20px;
+    }
+
+    .fab-options {
+        bottom: calc(100% - 320px); /* Adjust bottom position */
+        right: 20px;
+    }
+
+    .fab-option .heading, .fab-option .icon {
+        margin: 10px 0;
+    }
+    
+    .fab-new-content .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .fab-new-content .header hr {
+        width: 100%;
+        margin-bottom: 1px;
+    }
+
+    .fab-option-icons {
+        bottom: calc(100% - 100px); /* Adjust bottom position */
+        right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fab {
+        margin-bottom: 10px;
     }
 
     .fab-new-content .content {
-        padding: 0 10px;
-        /* Adjust padding for smaller screens */
+        overflow-y: auto; /* Enable scrolling for content */
+        padding: 0 10px; /* Adjust padding */
+        margin-top: 10px; /* Add margin */
+        height: calc(100% - 60px); /* Adjust height */
     }
 
+    .fab-new-content .content .textbox {
+        padding-bottom: 80px; /* Adjust padding for textbox */
+    }
 
+    
+
+    .fab-new-content .header p {
+        /* padding: 0px 80px; */
+        margin: 0rem 3rem;
+        text-align: center;
+        font-size: small;
+        font-weight: 500;
+        color: rgb(55, 55, 55);
+    }
+    
+    .fab-new-content .header hr {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    
+    .fab-new-content .content {
+        padding: 0px 3px;
+        margin-bottom: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    .fab-new-content .content .select label {
+        font-size: x-small;
+        color: rgb(55, 55, 55);
+        font-weight: bold;
+    }
+    
+    .fab-new-content .content .textbox-label {
+        font-size: x-small;
+        color: rgb(55, 55, 55);
+        font-weight: bold;
+    }
+    
+    .fab-new-content .content select {
+        margin-top: 8px;
+        display: flex;
+        background-color: rgb(222, 218, 218);
+        border-radius: 4px;
+        padding: 2px 2px;
+        width: 100%;
+        margin-bottom: 6px;
+        font-size: x-small;
+    }
+    
+    .textbox-wrapper {
+        display: flex;
+        align-items: end;
+        background-color: rgb(222, 218, 218);
+        border-radius: 4px;
+        padding: 4px;
+        width: 86%;
+        margin-bottom: 6px;
+        border: 1px solid black;
+        margin-top: 8px;
+    }
+    
+    .textbox_que {
+        display: flex;
+        align-items: end;
+        background-color: rgb(222, 218, 218);
+        border-radius: 4px;
+        padding: 4px 4px;
+        width: 86%;
+        margin-bottom: 6px;
+        border: 1px solid black;
+        margin-top: 8px;
+    }
+    
+    .textbox_que input[type="text"] {
+        display: flex;
+        background-color: rgb(222, 218, 218);
+        border-radius: 4px;
+        padding: 3px 6px;
+        padding-bottom: 25px !important;
+        width: 86%;
+        margin-bottom: 6px;
+        flex-grow: 1;
+        border: none;
+    }
+    
+    .fab-new-content .content .textbox {
+        display: flex;
+        background-color: rgb(222, 218, 218);
+        border-radius: 4px;
+        padding: 3px 6px;
+        padding-bottom: 44px;
+        width: 86%;
+        margin-bottom: 10px;
+        flex-grow: 1;
+        border: none;
+    }
+    
+    .fab-new-content .content .textbox:focus {
+        outline: none;
+    }
+    
+    .fab-new-content .content .attach {
+        background-color: rgb(190, 190, 190);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 4px 6px;
+        font-size: x-small;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 8px;
+        margin-bottom: 4px;
+    }
+    
+    .fab-new-content .btn {
+        padding: 0px 3px;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .fab-new-content .btn .submit {
+        margin-top: 4px;
+        display: flex;
+        background-color: rgb(222, 218, 218);
+        border-radius: 8px;
+        padding: 6px 20px;
+        cursor: pointer;
+        font-size: x-small;
+    }
+    
+    .fab-new-content .header span {
+        font-weight: bold;
+    }
+    
+    .fab-new-content .content .checkbox {
+        font-size: small;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .fab-new-content .content .checkbox .anonymous {
+        width: 12px;
+        height: 11px;
+        cursor: pointer;
+    }
+    
+    .fab-new-content .content .checkbox label {
+        font-size: smaller;
+    }
+    
+    .fab-new-content .content .profile {
+        padding: 0px 1px;
+    }
+    
+    .fab-new-content .content .profile label {
+        font-size: x-small;
+        color: rgb(55, 55, 55);
+        font-weight: bold;
+    }
+    
+    .fab-new-content .content .profile input {
+        margin-top: 4px;
+        display: flex;
+        border-radius: 4px;
+        padding: 4px 6px;
+        width: 86%;
+        margin-bottom: 6px;
+        border: 1px solid black;
+        font-size: x-small;
+    }
+    
+    #query input {
+        background-color: rgb(222, 218, 218);
+        
+    }
 }
-

@@ -19,9 +19,6 @@ const FAB = ({ login, loginemail }) => {
     const [selectedFiles, setSelectedFiles] = useState([]);
     const [filePreviews, setFilePreviews] = useState([]);
 
-
-
-
     const toggleOptions = () => {
         if (activeOption !== null) {
             setActiveOption(null);
@@ -206,6 +203,7 @@ const FAB = ({ login, loginemail }) => {
                             </div>
                         </>
                     ) : (
+                        <>
                         <div className="fab-new-content">
 
                             {activeOption === 'issue' &&
@@ -393,6 +391,9 @@ const FAB = ({ login, loginemail }) => {
                                 <span className='icon' onClick={() => handleOptionClick('issue')}><Flag /></span>
                             </div>
                         </div>
+
+                    </>
+                    
                     )}
                 </div>
             )}
