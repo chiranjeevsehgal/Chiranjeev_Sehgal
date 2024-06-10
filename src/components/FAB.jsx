@@ -177,7 +177,7 @@ const FAB = ({ login, loginemail }) => {
              {/* Overlay */}
              {isOpen && <div className="overlay active" onClick={toggleOptions}></div>}
 
-            <div className="fab" onClick={toggleOptions}>
+            <div className={`fab ${activeOption !== null ? 'open' : ''}`} onClick={toggleOptions}>
                 <span className="fab-icon">{isOpen || activeOption !== null ? <X color='black' /> : <NotebookPen color='black' />}</span>
             </div>
             
