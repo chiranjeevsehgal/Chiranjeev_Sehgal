@@ -378,6 +378,10 @@
         align-items: center;
         margin-inline: 1rem;
     }
+
+    .answer-body{
+        margin-bottom: 4rem;
+    }
     
     .answer-body .subdetails .like p{
         margin: 0rem 0.2rem;

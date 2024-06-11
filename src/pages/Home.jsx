@@ -19,7 +19,7 @@ function Home(){
         <div>
             <Navbar login={login} setLogin={setLogin} />
             <Question/>
-            <FAB options={options} activeOptions={['issue','feedback','suggestion','contact']} login={login} loginemail={email} />
+            <FAB options={options} activeOptions={['suggestion','contact']} login={login} loginemail={email} />
             </div>
     )
 }
