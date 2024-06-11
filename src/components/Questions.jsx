@@ -4,13 +4,11 @@ import '../styles/question.css'
 function Question() {
     return (
         <>
-            {/* Back to question Header */}
             <div className="question-header">
                 <ArrowLeft />
                 <p>Back to Questions</p>
             </div>
 
-            {/* Question */}
 
             <div className="question-body">
                 <div className="body-head">
@@ -38,7 +36,6 @@ function Question() {
                 </div>
             </div>
 
-            {/* Separator */}
             <div className="body-separator">
                 <div className="answer">
                     <p>Answers (23)</p>
@@ -54,7 +51,6 @@ function Question() {
 
             </div>
 
-            {/* Answers */}
             <div className="answer-body">
                 <div className="body-head">
                     <div className="profile">

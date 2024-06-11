@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/rating.css'
 
 const Rating = () => {
@@ -37,7 +37,7 @@ const Rating = () => {
             </button>
             {!showThanks ? (
               <div>
-                <h3>Rate Us</h3>
+                <h3>Rate your experience with us!</h3>
                 <div className="rating-stars">
                   {[...Array(5)].map((_, i) => (
                     <span
@@ -57,7 +57,7 @@ const Rating = () => {
               </div>
             ) : (
               <div>
-                <h3>Thank You!</h3>
+                <h3>Thank you for taking the time to rate us!</h3>
               </div>
             )}
           </div>

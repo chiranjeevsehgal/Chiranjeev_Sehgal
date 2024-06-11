@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/fab.css'
-import { NotebookPen, X, Flag, SquarePen, MessagesSquare, ThumbsUp, ThumbsDown, Paperclip } from 'lucide-react';
+import { NotebookPen, X, Paperclip } from 'lucide-react';
 import Overlay from './Overlay.jsx';
 import Rating from './Rating.jsx';
 
@@ -19,7 +19,7 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
 
     const [showthankyou, setShowThankYou] = useState(false);
     const [thankyoumsg, setThankYouMsg] = useState("");
-    
+
     const [showrating, setShowRating] = useState(false);
 
     const [selectedFiles, setSelectedFiles] = useState([]);
@@ -60,7 +60,6 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
 
     useEffect(() => {
         if (activeOption === "issue") {
@@ -182,7 +181,6 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
         setTimeout(() => setShowThankYou(false), 5000);
         setTimeout(() => setShowRating(true), 2000);
 
-        
     };
 
     const handleFileChange = (e) => {
@@ -198,9 +196,9 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
     };
 
     return (
-        
+
         <div className="fab-container">
-            {showrating && <div><Rating/></div>}
+            {showrating && <div><Rating /></div>}
             {showthankyou && <div className="thank-you-message"><p>{thankyoumsg}</p></div>}
             {isMobile && <Overlay show={isOpen || activeOption !== null} onClick={toggleOptions} />}
 
@@ -218,9 +216,9 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
                         <>
                             {filteredOptions.map(option => (
                                 <div key={option.id} className="fab-option" onClick={() => handleOptionClick(option.id)}>
-                                                                    
+
                                     <span className='heading'>{option.title}</span>
-                                    <span className='icon'>{option.icon}</span>
+                                    <span className='icon'><img src={option.icon} alt={option.title} /></span>
                                 </div>
                             ))}
                         </>
@@ -414,7 +412,8 @@ const FAB = ({ login, loginemail, options, activeOptions = [] }) => {
                                                 className="icon"
                                                 onClick={() => handleOptionClick(option.id)}
                                             >
-                                                {option.icon}
+                                                <img src={option.icon} alt={option.title}/>
+
                                             </span>
                                         ))}
                                     </div>

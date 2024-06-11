@@ -1,9 +1,8 @@
 import { ChevronDown } from 'lucide-react';
 import '../styles/navbar.css'
-import { useState } from 'react';
+
 
 function Navbar({login, setLogin}){
-    // const [login, setLogin] = useState(false)
     const handleLogin = ()=>{
         setLogin(!login)
     }
