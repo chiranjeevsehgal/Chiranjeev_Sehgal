@@ -55,7 +55,6 @@ body {
     position: absolute;
     bottom: 80px;
     right: 0;
-    ;
 }
 
 .fab-option {
@@ -372,7 +371,7 @@ strong {
         padding: 16px;
         left: 0;
         right: 0;
-        z-index: 1000;
+        z-index: 10000;        
     }
 
     .fab-container {
@@ -393,7 +392,7 @@ strong {
     .fab-options {
         bottom: 60px;
         right: 0px;
-        z-index: 1000;
+        z-index: 10000;
     }
 
     .fab-option .heading {
@@ -425,14 +424,14 @@ strong {
 
     .fab-option-icons {
         bottom: 350px;
-        right: 80px;
+        right: 100px;
         justify-content: center;
         align-items: center;
     }
 
     .fab {
         margin-bottom: 10px;
-        z-index: 1000;
+        z-index: 10000;
     }
 
     .fab-new-content .content {
